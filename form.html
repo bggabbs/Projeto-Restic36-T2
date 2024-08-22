@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie Sua Redação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <!-- Formulário para enviar a redação -->
+        <form id="essayForm">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="essay">Sua Redação:</label>
+                <textarea id="essay" name="essay" rows="15" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="feedback-method">Como você gostaria de receber a correção?</label>
+                <select id="feedback-method" name="feedback-method" required>
+                    <option value="audio">Áudio</option>
+                    <option value="pdf">PDF</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="special-considerations">Considerações Especiais:</label>
+                <textarea id="special-considerations" name="special-considerations" rows="5" placeholder="Você gostaria de fazer alguma ressalva?"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="difficulties">Dificuldades na Redação:</label>
+                <textarea id="difficulties" name="difficulties" rows="5" placeholder="Quais dificuldades você encontrou ao escrever sua redação?"></textarea>
+            </div>
+            <button type="submit">Enviar Redação</button>
+        </form>
+        <div id="feedback" class="feedback-message"></div>
+    </main>
+
+    <!-- Aqui estou incluindo o script.js também na página de formulário -->
+    <script src="script.js"></script>
+</body>
+</html>

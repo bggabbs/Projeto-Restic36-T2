@@ -1,0 +1,132 @@
+/* Importando a fonte Comfortaa do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+body {
+    font-family: 'Comfortaa', sans-serif; /* Definindo a fonte para todo o corpo do site */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo da página principal (Header) */
+header {
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    height: 100vh; /* Faz o header ocupar toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 4em; /* Tamanho do ícone do logo */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFDD00; /* Amarelo para o botão */
+    color: #003366; /* Azul escuro para o texto do botão */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-family: 'Comfortaa', sans-serif;
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+.btn:hover {
+    background-color: #003366; /* Cor do botão quando o mouse passa por cima */
+    color: white;
+}
+
+/* Estilo da página de formulário */
+main {
+    background-color: #f4f4f4; /* Cor de fundo clara para o formulário */
+    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto; /* Centraliza o formulário na tela */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para um efeito de elevação */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #003366; /* Azul escuro para o texto do rótulo */
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFDD00; /* Amarelo para o botão */
+    color: #003366; /* Azul escuro para o texto do botão */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer; /* Mostra um cursor de mão para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+button:hover {
+    background-color: #003366; /* Cor do botão quando o mouse passa por cima */
+    color: white;
+}
+
+/* Estilo para a mensagem de feedback */
+.feedback-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave para visibilidade e posição */
+    transform: translateY(-20px); /* Começa um pouco acima */
+}
+
+/* Mensagem de sucesso */
+.feedback-message.success {
+    color: green;
+    background-color: #d4edda; /* Fundo verde claro para sucesso */
+}
+
+/* Mensagem de erro */
+.feedback-message.error {
+    color: red;
+    background-color: #f8d7da; /* Fundo vermelho claro para erro */
+}
